@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<!-- saved from url=(0034)http://127.0.0.1:5500/project.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+
+<style>
+    body {
+        margin: 0%;
+        padding: 0%;
+        background-image: url(back2.png);
+        background-size: 1500px;
+        color: white;
+    }
+
+    .left {
+
+        display: inline-block;
+        position: absolute;
+        left: 34px;
+        top: 20px;
+
+    }
+
+    .left img {
+        width: 250px;
+    }
+
+    .left div {
+        text-align: center;
+        color: white;
+        font-size: 24px;
+    }
+
+    .mid {
+        /* border: 5px solid rgb(252, 5, 5); */
+        display: block;
+        width: 33%;
+        margin: 30px auto;
+    }
+
+    .right {
+        /* border: 2px solid rgb(0, 255, 106); */
+        display: inline-block;
+        position: absolute;
+        right: 34px;
+        top: 35px;
+    }
+
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        color: white;
+        display: inline-block;
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        font-size: 25px;
+        margin: 10px;
+    }
+
+    .navbar li a:hover {
+        color: rgb(66, 226, 93);
+        text-decoration: underline;
+    }
+
+    .navbar li a.active {
+        color: rgb(66, 226, 93);
+        text-decoration: underline;
+    }
+
+    .button {
+        margin: 4px 4px;
+        padding: 3px 9px;
+        color: white;
+        background-color: red;
+        font-size: 18px;
+        border-radius: 23px;
+        cursor: pointer;
+    }
+
+    .button:hover {
+        color: black;
+        background-color: yellow;
+        font-size: 15px;
+
+
+
+    }
+
+    .contain {
+        /* border: 2px solid black; */
+        margin: 30px 338px;
+        padding: 87px;
+        width: 47%;
+        border-radius: 28px;
+
+    }
+
+    .name input {
+        text-align: center;
+        width: 300px;
+        display: block;
+        margin: 11px auto;
+        font-size: 21px;
+        border-radius: 8px;
+    }
+
+    .contain h1 {
+        text-align: center;
+    }
+
+    .contain h2 {
+        text-align: center;
+        margin-top: 20px;
+        color: #ef413b;
+        font-size: 32px;
+        line-height: 29px;
+    }
+    
+
+    .contain button {
+        display: block;
+        width: 74%;
+        margin: 20px auto;
+    }
+</style></head>
+
+
+<body>
+    <header>
+        <div class="left">
+            <img src="./Project_files/gym2.png"> 
+            <div>Life Style Gym</div>
+        </div>
+
+        <div class="mid">
+
+            <ul class="navbar">
+                <li><a href="http://127.0.0.1:5500/project.html#" class="active">Home</a></li>
+                <li><a href="http://127.0.0.1:5500/project.html#">Offers</a></li>
+                <li><a href="http://127.0.0.1:5500/project.html#">About Us </a></li>
+                <li><a href="http://127.0.0.1:5500/project.html#">Conact Us</a></li>
+
+        </ul></div>
+        <div class="right">
+            <button class="button">Whatsapp Now</button>
+            <button class="button">Call Now</button>
+        </div>
+    </header>
+
+
+    <div class="contain">
+        <h1>WELCOME AT LIFE STYLE GYM OF PALGHAR</h1>
+        <h2>FITNESS FOR EVERYBODY</h2>
+        <form action="http://127.0.0.1:5500/kunal.php">
+
+
+            <div class="name">
+                <input type="text" name="" placeholder="Enter your  full name">
+
+            </div>
+            <div class="name">
+                <input type="text" name="" placeholder="Enter your age">
+
+            </div>
+            <div class="name">
+                <input type="text" name="" placeholder="Enter your gender">
+
+            </div>
+            <div class="name">
+                <input type="text" name="" placeholder="Enter your mobile no.">
+            </div>
+            <div class="name">
+                <input type="text" name="" placeholder="E mail">
+            </div>
+            <div class="name">
+                <input type="text" name="" placeholder="Locality">
+
+            </div>
+            <button class="button">Submit</button>
+            <!-- <reset class="button">reset</reset> -->
+        </form>
+    </div>
+
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
